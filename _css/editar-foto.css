@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+#container-trocar-foto{
+	width:98%;
+	max-width:500px;
+	height:auto;
+	background-color:#FFF;
+	position: absolute;
+	top: -50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+.fechar-container{
+	width:35px;
+	height:35px;
+	position:absolute;
+	right:3px;
+	top:3px;
+	background-image:url(../_imgs/fechar.png);
+	background-size:100% 100%;
+	transition:background-image 0.2s;
+	cursor:pointer;
+}
+
+#form-foto-desktop{
+	width:100%;
+	height:auto;
+	padding: 3px 0px 3px 0px;
+}
+.cropit-preview {
+	background-color: #f8f8f8;
+	background-size: cover;
+	border: 3px solid rgba(17, 181, 191, 0.81);
+	border-radius: 3px;
+	margin: 6px auto 6px auto;
+	width: 188px;
+	height: 188px;
+}
+.cropit-preview-image-container {
+	cursor: move;
+}
+#input-foto{
+	display:none;
+}
+#botao-selecionar-foto{
+	width: 120px;
+    height: 25px;
+    font-size: 16px;
+    border: none;
+    display: block;
+    margin: 0px auto 10px auto;
+    transition: all 0.5s;
+    cursor: pointer;
+	border:none;
+}
+#botao-selecionar-foto:hover{
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.59);
+	background-color: #11b5bf;
+	color:white;
+}
+#container-controle-tamanho{
+	width: 250px;
+	height: auto;
+	padding: 3px 0px 3px 0px;
+	position:relative;
+}
+.image-size-label {
+	text-align: center;
+}
+.cropit-image-zoom-input{
+	display: block;
+	margin: 1px auto 1px auto;
+}
+#container-botoes-girar{
+	width: 50px;
+	height: 105px;
+	position: absolute;
+	bottom: 0px;
+	left: -58px;
+}
+.rotate-ccw{
+	width: 50px;
+	height: 50px;
+	background-image: url(../_imgs/girar-esquerda.png);
+	background-size: 100% 100%;
+	margin-bottom: 2.5;
+}
+.rotate-cw{
+	width: 50px;
+	height: 50px;
+	background-image: url(../_imgs/girar-direita.png);
+	background-size: 100% 100%;
+	margin-top: 2.5;
+}
+div#container-botoes-trocar{
+	width: 210px;
+	height: 25px;
+	display: block;;
+	margin: 3px auto 3px auto;
+}
+.botaos-trocar-foto{
+	width: 100px;
+	height: 25px;
+	float: left;
+	border: none;
+	margin: 0px 2.5px;
+	transition: all 0.5s;
+	font-size: 0.9em;
+	background-color: #dddddd;
+	text-align: center;
+	line-height: 25px;
+	cursor: pointer;
+}
+.botaos-trocar-foto:hover{
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.59);
+	background-color: #11b5bf;
+	color:white;
+}
+@media screen and (min-width:900px){/*------------------------------------------------------------------------MEDIA-----------------------------------------------------------------*/
+.fechar-container:hover{
+	background-image:url(../_imgs/fechar2.png);
+}
+.fechar-container{
+	right:5px;
+	top:5px;
+}
+#form-foto-desktop{
+	padding: 10px 0px 10px 0px;
+}
+.cropit-preview {
+	width: 250px;
+	height: 250px;
+}
+#botao-selecionar-foto{
+    height: 35px;
+    margin: 0px auto 15px auto;
+    transition: all 0.5s;
+}
+#container-controle-tamanho{
+	padding: 5px 0px 5px 0px;
+}
+div#container-botoes-trocar{
+	height: 35px;
+}
+.botaos-trocar-foto{
+	height: 35px;
+	line-height: 35px;
+}
+}

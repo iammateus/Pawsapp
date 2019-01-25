@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+.container-usuario{
+	width:30%;
+	padding:5px 0px;
+	margin:3px 0px 3px 2.5%;
+	background-color:rgba(255,255,255,0.9);
+	display:inline-block;
+	text-align:center;
+	position:relative;
+}
+img.foto-usuarios{
+	width:80%;
+	margin:5px 10% 10px 10%;
+	border-radius:50%;
+}
+span.nome-usuarios{
+	font-size:1.1em;
+	color:#187076;
+	word-wrap: break-word;
+	position:relative;
+}
+div.icone-x{
+	width:25px;
+	height:25px;
+	background-image:url(../_imgs/x-icon.png);
+	background-size:100% 100%;
+	position:absolute;
+	right: 11%;
+    top: 8px;
+	cursor:pointer;
+	transition:background-image 0.8s;
+}
+
+@media screen and (min-width:960px){
+div.icone-x:hover{
+	background-image:url(../_imgs/x-icon2.png);
+}
+span.nome-usuarios:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #187076;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+  	transition: all 0.3s ease-in-out 0s;
+}
+span.nome-usuarios:hover:before {
+	visibility: visible;
+  	-webkit-transform: scaleX(1);
+  	transform: scaleX(1);
+}
+}

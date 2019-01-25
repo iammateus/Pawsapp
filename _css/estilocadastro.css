@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'BeautyFont';
+    src:url(../_fonts/beauty-and-the-beast-Sample.otf);
+}
+@font-face{
+	font-family:'FontLogo';
+	src:url(../_fonts/WalkwayBold.ttf)
+}
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Titillium Web', sans-serif;
+	outline:none;
+}
+#interface{
+	padding:1px 0px 20px 0px;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-size:100%;
+    background-color: #f5f8fa;
+}
+div#camada-fundo-site{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	position:fixed;
+	z-index:5;
+	top: 0px;
+	left: 0px;
+	display:none;
+}
+h1.titulo-modal{
+	text-align:center;
+	font-weight:400;
+	font-size:1.5em;
+	padding:5px;
+	color: #00b6c1;
+}
+.container-botoes-modal{
+	width:65%;
+	height:25px;
+	display:block;
+	margin:15px auto 5px auto;
+}
+.botoes-modal{
+	width: 45%;
+	height: 25px;
+	margin: 0px 2.5% 0px 2.5%;
+	float: left;
+	font-size:1em;
+	border:none;
+	background-color:#dddddd;
+	transition:all 0.7s;
+	cursor:pointer;
+	text-align: center;;
+	line-height: 25px;
+}
+/* Cabeçalho */
+#cabecalho{
+	width: 100%;
+	height:auto;
+	text-align:center;
+	margin-bottom:30px;
+}
+#logo{
+	width:80px;
+	margin:10px auto 10px auto;
+	display:block;
+}
+#titulo{
+	font-family:'FontLogo', sans-serif;
+	font-size: 1.9em;
+	color:#473424;
+	text-align:center;
+}
+/*Configurações elementos cadastro*/
+#form-cadastrar{
+	width:100%;
+	height:auto;
+	display:block;
+	margin:0px auto 0px auto;
+	max-width:600px;
+}
+fieldset{
+	width:100%;
+	height:auto;
+	border:none;
+}
+.container-dupla{
+	width:100%;
+	height:auto;
+}
+div.container-selects-postar{
+	width:90%;
+	height:auto;
+	margin-left:5%;
+	margin-bottom:13px;
+	background-color:rgba(0,0,0,0);
+
+}
+.selects-postar{
+	width:100%;
+	height:28px;
+	border-radius:5px;
+	padding-left:5px;
+	margin-left:0px;
+	border:solid 1px rgba(0,0,0,0.7);
+	display:inline-block;
+	vertical-align:top;
+	font-size:1em;
+	background-color:rgba(0,0,0,0);
+}
+.selects-postar:focus{
+	border:solid 1px #00b6c1;
+}
+.divs-input{
+	width:90%;
+	height:28px;
+	font-size:0.9em;
+	margin: 1px 5% 17px 5%;
+	border-bottom:solid 1px rgba(0,0,0,0.7);
+	position:relative;
+	background-color:rgba(0,0,0,0);
+}
+.divs-input input{
+	border-radius:5px;
+	padding-left:5px;
+	width:100%;
+	height:28px;
+	border:none;
+	float:left;
+	font-family:'FontLogo',sans-serif;
+	font-size: 1.3em;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	background-color:rgba(0,0,0,0);
+}
+.div-input-pequeno{
+	width: 50%;
+}
+#sexos{
+	width: 238px;
+	margin: 0px 5% 14px 5%;
+	position:relative;
+}
+#sexos input{
+	width:15px;
+	height:15px;
+}
+#aviso-sexo{
+	top:-3.5px;
+}
+#sexos label{
+	font-family:'FontLogo', sans-serif;
+	font-size: 1.2em;
+	margin-left:5px;
+}
+label.descricao-grupo-input{
+	font-family:'FontLogo', sans-serif;
+	font-size: 1.3em;
+	margin-left:5%;
+	display:block;
+}
+#feminino{
+	width: 10px;
+	height: 10px;
+}
+#masculino{
+	width: 10px;
+	height: 10px;
+	margin-left:5px;
+}
+div#container-botoes{
+	width: 90%;
+	height: 30px;
+    display:block;
+	margin: 40px auto 0px auto;
+	max-width:500px;
+}
+.botoes-cadastrar{
+	width:45%;
+	float:left;
+	height:30px;
+	background-color: #11b5bf;
+	border:none;
+	margin:0px 2.5%;
+	transition: all 0.7s;
+    cursor: pointer;
+	text-align:center;
+	line-height:30px;
+	font-size:1.2em;
+	font-family: 'FontLogo',sans-serif;
+	color:white;
+}
+#container-status-senha{
+	width:200px;
+	height:25px;
+	margin: 0px 5% 7px;
+	display:none;
+}
+#status-senha{
+	font-weight: 600;
+	border-radius:3px;
+	height:23px;
+	line-height:23px;
+	height:25px;
+	padding:0px 2.5% 0px 2.5%;
+	color:#FFF;
+	transition:all 0.3s;
+}
+.weak{
+	width:30%;
+	background-color:#d72828;
+}
+.medium{
+	width:50%;
+	background-color:#fcbb39;
+}
+.strong{
+	width:95%;
+	background-color:#4caf50;
+}
+#password-tips{
+	width:80%;
+	display:block;
+	margin:0px auto 0px auto;
+}
+#password-tips li{
+	margin:5px 0px 5px 0px;
+	color:#31777b;
+}
+/*CSS div de mengasens e de carregando*/
+div.container-mensagens{
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding-top:35px;
+}
+span#avisos-cadastrar-descricao{
+	font-size:1.3em;
+	color:#900;
+	display:block;
+}
+div#carregando-cadastrar-container{
+	width:140px;
+	height:50px;
+	margin:0 auto 0px auto;
+	line-height:70px;
+	display:none;
+}
+div#carregando-cadastrar-container p{
+	font-size:1em;
+	font-family: 'BeautyFont',sans-serif;
+}
+img#carregando-cadastrar{
+	width:50px;
+	height:50px;
+	float:left;
+}
+/*Configurações postar acima------------------------------------------------------------------------ */
+@media (min-width: 500px){
+
+}
+
+@media (min-width: 900px){
+#password-tips{
+	width:90%;
+}
+#container-status-senha{
+	margin: 2px 2.1% 10px;
+}
+#cabecalho{
+	margin-bottom:70px;
+}
+div#container-botoes{
+	margin-top: 43px;
+}
+.botoes-cadastrar:hover{
+    background-color: #11b5bf;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.59);
+    color: white;
+}
+label.descricao-grupo-input {
+    margin-left: 2%;
+}
+#sexos{
+	display: inline-block;
+   	margin: 11px 1% 14px 3%;
+    vertical-align: top;}
+#container-email{
+	width:95%;
+}
+div.container-selects-postar{
+	width:45%;
+	height:auto;
+	margin:0px 2% 20px 2%;
+	display:inline-block;
+	vertical-align:top;
+}
+.divs-input{
+	width: 45%;
+	margin:0px 2% 20px 2%;
+	display:inline-block;
+	padding:0px;
+	font-size:1em;
+}
+.divs-input input{
+	font-size:1.1em;
+}
+.selects-postar{
+	font-size:1em;
+}
+#logo{
+	width:100px;
+	margin:10px auto 10px auto;
+	display:block;
+}
+.botoes-modal:hover{
+	background-color:#11b5bf;
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.59);
+	color: white;
+}

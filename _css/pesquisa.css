@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+div.elemento-pesquisa{
+	width:100%;
+	height:65px;
+	background-color:#FFF;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	padding:5px;
+	line-height:55px;
+	font-size:1.4em;
+	border-top:solid 1px #fcbb39;
+}
+img.foto-usuario-pesquisa{
+	width:55px;
+	height:55px;
+	border-radius:50%;
+	float:left;
+}
+span.nome-usuario{
+	float:left;
+	display:block;
+	margin-left:10px;
+	color:#355d60;
+}
+.nenhum-pesquisa{
+	width:100%;
+	height:125px;
+	font-size:1.8em;
+	text-align:center;
+	line-height:125px;
+	font-weight:500;
+	font-family: 'BeautyFont' ,sans-serif;
+	color:#355d60;	
+}
+.icone-grande-pesquisa-mobile{
+	width:225px;
+	margin:25px auto 0px auto;
+	display:block;
+}
+@media screen and (min-width:960px){
+.icone-grande-pesquisa-mobile{
+	width: 122px;
+    margin: 0px auto 28px auto;
+}
+}

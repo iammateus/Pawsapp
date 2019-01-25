@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'BeautyFont';
+    src:url(../_fonts/beauty-and-the-beast-Sample.otf);
+}
+/*Configura scroll*/
+::-webkit-scrollbar-track {
+    background-color:#CCC;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background: #CCC;
+}
+::-webkit-scrollbar-thumb {
+    background: #11b5bf;
+	border-radius:5px;
+}
+/*Reseta as bordas e os paddings */
+*{
+	padding:0;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*Tira o efeito de botão clicado*/
+input,button{
+	outline:none;
+}
+/*Tira o azul e o traçado dos links*/
+a{
+	text-decoration:none;
+	color:#FFF;
+}
+
+img#subir-tela{/*Estilização botão de voltar ao topo*/
+	width:65px;
+	height:65px;
+	position:fixed;
+	bottom:20px;
+	transition: all .6s;
+	cursor:pointer;
+	z-index:1;
+}
+img.aparece{/*Classe para a animação de aparecer do botão voltar ao topo*/
+	right:20px;
+}
+img.desaparece{/*Classe para a animação de desaparecer do botão voltar ao topo*/
+	right:-120px;
+}
+/*Configuraçã menu mobile*/
+
+img#abrir-fechar-menu{/*Estilização do botão de menu mobile*/
+	width:50px;
+	height:50px;
+	margin:15px 0px 0px 7.5px;
+	position:fixed; 
+}
+/*Configurando as características do menu mobile----------------------------------------------------------------*/
+nav#menu-mobile{
+	width:100%;
+	background-color:#11b5bf;
+	position:fixed;
+	z-index:10;
+	top:80px;
+	left:-100%;
+	bottom:0;
+	box-shadow: inset -5px 0px 30px 0 rgba(0,0,0,.3);
+}
+nav#menu-mobile ul{
+	width:90%;
+	padding:10px 5% 0px 5%;
+	list-style:none;
+}
+nav#menu-mobile li{
+	width:95%;
+	height:55px;
+	line-height:55px;
+	border-bottom:1px solid #FFF;
+	font-size:25px;
+	color:#FFF;
+	padding-left:5%;
+}
+nav#menu-mobile li:hover{
+	background-color:#FFF;
+	color:#11b5bf;
+}
+/*-------------------------------------------------------------------------------------------------------------*/

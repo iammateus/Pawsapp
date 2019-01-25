@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+@font-face{/*Configura a fonte*/
+	font-family:'FontLogo';
+	src:url(../_fonts/WalkwayBold.ttf);
+}
+@font-face {
+    font-family: 'BeautyFont';
+    src:url(../_fonts/beauty-and-the-beast-Sample.otf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+/*Reset inicial*/
+*{
+	padding:0px;
+	margin:0 auto;
+	outline:none;
+	font-family: 'Titillium Web', sans-serif;
+}
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+/*Configura a barra de rolagem*/
+::-webkit-scrollbar-track {
+    background-color:#E2E2E2;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background: #E2E2E2;
+}
+::-webkit-scrollbar-thumb {
+    background: #11b5bf;
+	border-radius:5px;
+}
+/*Configuração modal a abaixo*/
+div#camada-fundo-site{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	position:fixed;
+	z-index:5;
+	top: 0px;
+	left: 0px;
+	display:none;
+}
+h1.titulo-modal{
+	text-align:center;
+	font-weight:400;
+	font-size:1.5em;
+	padding:5px;
+	color: #00b6c1;
+}
+.fechar-container{
+	width:35px;
+	height:35px;
+	position:absolute;
+	right:3px;
+	top:3px;
+	background-image:url(../_imgs/fechar.png);
+	background-size:100% 100%;
+	transition:background-image 0.2s;
+	cursor:pointer;
+}
+.container-botoes-modal{
+	width:65%;
+	height:25px;
+	display:block;
+	margin:15px auto 5px auto;
+}
+.botoes-modal{
+	width: 45%;
+	height: 25px;
+	margin: 0px 2.5% 0px 2.5%;
+	float: left;
+	font-size:1em;
+	border:none;
+	background-color:#dddddd;
+	transition:all 0.7s;
+	cursor:pointer;
+	text-align: center;;
+	line-height: 25px;
+}
+/*Configuração modal a cima*/
+div#interface{/*Configuração inicial da interface*/
+	width:100%;
+	height:auto;
+	background:#f9f3f3;
+}
+
+#cabecario-site{/*Configuração do cabeçario mobile*/
+	width:100%;
+	height:75px;
+	position:fixed;
+	z-index:3;
+	top:0px;
+	left:0px;
+	background-color:#fcbb39;
+	border-bottom:solid 1px #c7942e;
+}
+#botao-voltar{
+	width:45px;
+	height:45px;
+	margin:15px 1% 15px 1%;
+	float:left;
+	background-image:url(../_imgs/botao-voltar.png);
+	background-size:100% 100%;
+}
+
+#logo-cabecario{
+	height:80px;
+	top:5px;
+	position:absolute;
+	left:40%;
+}
+
+#botao-sair{/*Configurações botoes sair*/
+	width:45px;
+	height:45px;
+	margin:15px 1% 15px 1%;
+	background:url(../_imgs/botao-sair.png);
+	background-size:100% 100%;
+	border:none;
+	margin-right:1%;
+	float:right;	
+	font-size:0px;
+}
+#container-vsualizacao{
+	width:100%;
+	max-width:1400px;
+	height:auto;
+	display:block;
+	margin:76px auto 0px auto;
+}
+div#pre-footer{/*Div pré footer para englobar a imagem dos cachorros amarela do footer*/
+	width:100%;
+	height:75px;
+	padding-top:20px;
+	clear:both;
+}
+div#pre-footer img{/*imagem dos cachorros amarela do footer*/
+	height:76px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+footer#rodape{/*configuração do rodapé*/
+	widows:100%;
+	height:300px; 
+	background-color:#fec52d;
+	
+}
+footer#rodape p{/*Texto copyright*/
+	font-size:16px;
+	font-weight:600;
+	color:rgba(0,0,0,0.7);
+	padding:20px 0px 0px 20px;
+
+}
+@media screen and (min-width:460px){
+span.tempo-comentario{
+	width:85%;
+}
+
+}
+@media screen and (min-width:960px){
+.fechar-container:hover{
+	background-image:url(../_imgs/fechar2.png);
+}
+.fechar-container{
+	right:5px;
+	top:5px;
+}
+.container-botoes-modal{
+	height:35px;
+}
+.botoes-modal{
+	width: 45%;
+	height: 30px;
+	line-height: 30px;
+}
+.botoes-modal:hover{
+	background-color:#11b5bf;
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.59);
+	color: white;
+}
+#botao-sair{/*Configurações botoes sair*/
+	width:auto;
+	height:auto;
+	margin:10px 1% 0px 0px;;
+	padding:4px 17px 4px 17px;
+	background-image:none;
+	background-color:transparent;
+	border:solid 1px #FFFFFF;
+	border-radius:20px;	
+	font-size:19px;
+	color:#FFF;
+	font-weight:600;
+	transition:0.5s;
+	cursor:pointer;
+    font-family: 'FontLogo',sans_serif;
+}
+#sair:hover{/*Estilização do botão de logar*/
+	border-color:#FFF;
+	background-color:#FFF;
+	color:#fec52d;
+}
+/*Pré footer muda algumas características*/
+div#pre-footer{
+	height:150px;
+}
+div#pre-footer img{
+	height:150px;
+}

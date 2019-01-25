@@ -1,0 +1,283 @@
+/*Configuração ok*/
+.ok{
+	width: 25px;
+    height: 25px;
+	top:1.5px;
+    right: 1px;
+	position:absolute;
+	float:right;
+	background-image:url(../_imgs/ok-icone.png);
+	background-size:100% 100%;
+	display:none; 
+}
+.ok .tooltiptext{
+	width:195px;
+	background-color:#4caf50;
+	color:#FFF;
+	text-align:center;
+	padding:5px;
+	border-radius:6px;
+	position:absolute;
+	z-index:3;
+	top: 125%;
+    right: -1%;
+	font-weight:500;
+	font-size:1em;	
+}
+.ok .tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    margin-top: -12px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #4caf50 transparent;
+
+}
+/*Configuração ok*/
+.aviso-input-selects{
+	width:27px;
+	height:27px;
+	margin:3.5px 2px 1.5px 1px;
+	background-image:url(../_imgs/aviso.png);
+	background-size:100% 100%;
+	position:relative;
+	display:none; 
+}
+.aviso-input-selects .tooltiptext{
+	width:81px;
+	padding:5px;
+	text-align:center;
+	background-color:#ff9d1b;
+	color:#FFF;
+	border-radius:6px;
+	position:absolute;
+	z-index:1;
+	top: 0px;
+    left:130%; 
+	font-weight:500;
+	white-space: pre-line;
+	font-size:1em;
+}
+.aviso-input-selects .tooltiptext::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 99%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent #ff9d1b transparent transparent;
+}
+.erro-input-selects{
+	width:27px;
+	height:27px;
+	margin:3.5px 2px 1.5px 1px;
+	display:inline-block;
+	background-image:url(../_imgs/error-input.png);
+	background-size:100% 100%;
+	position:relative;
+	display:none;
+}
+.erro-input-selects .tooltiptext{
+	width:81px;
+	padding:5px;
+	background-color:#d72828;
+	color:#FFF;
+	text-align:center;
+	border-radius:6px;
+	position:absolute;
+	z-index:1;
+	top: 0px;
+    left:130%; 
+	transition:opacity 0.8s;
+	font-weight:500;
+	font-size:1em;
+}
+.erro-input-selects .tooltiptext::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 99%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent #d72828 transparent transparent;
+}
+.erro-input-esquerda{
+	width: 28px;
+    height: 28px;
+    right: 1px;
+	top:1px;
+	position:absolute;
+	float:right;
+	background-image:url(../_imgs/error-input.png);
+	background-size:100% 100%;
+	display:none; 
+}
+.esquerda-menor{
+	width: 25px;
+    height: 25px;
+	top:1.5px;
+}
+.erro-input-esquerda .tooltiptext{
+	width:195px;
+	background-color:#d72828;
+	color:#FFF;
+	text-align:center;
+	padding:5px;
+	border-radius:6px;
+	position:absolute;
+	z-index:3;
+	top: 125%;
+    right: -1%;
+	font-weight:500;
+	font-size:1em;
+}
+.erro-input-esquerda .tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    margin-top: -12px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #d72828 transparent;
+
+}
+/*configuração dos avisos dos inputs*/
+.aviso-input-esquerda{
+	width:27px;
+	height:27px;
+	right:1.5px;
+	top:1.5px;
+	position:absolute;
+	float:right;
+	background-image:url(../_imgs/aviso.png);
+	background-size:100% 100%;
+	display:none; 
+}
+.aviso-input-esquerda .tooltiptext{
+	width:195px;
+	background-color:#fca127;
+	color:#FFF;
+	text-align:center;
+	padding:5px;
+	border-radius:6px;
+	position:absolute;
+	z-index:3;
+	top: 135%;
+    right: -1%;
+	font-weight:500;
+	font-size:1em;
+}
+.aviso-input-esquerda .tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    margin-top: -12px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #fca127 transparent;
+
+}
+/*Configuração de icones e balões de erro*/
+.erro-input{
+	width:28px;
+	height:28px;
+	right:1px;
+	top:1px;
+	position:absolute;
+	float:right;
+	background-image:url(../_imgs/error-input.png);
+	background-size:100% 100%;
+	display:none;
+} 
+/*Configura para os tolltips aparecer*/
+.erro-input .tooltiptext{
+	visibility:hidden;
+	width:195px;
+	background-color:#d72828;
+	color:#FFF;
+	text-align:center;
+	padding:5px 0px;
+	border-radius:6px;
+	/*Posicionando a descrição*/
+	position:absolute;
+	z-index:8;
+	top: 0px;
+    right: 122%; 
+	/*Configurações para aparecer*/
+	opacity:0;
+	transition:opacity 0.8s;
+	font-family: 'Bubbler One', sans-serif;
+	font-weight:600;
+}
+
+.erro-input .tooltiptext::after{
+    content: " ";
+    position: absolute;
+    top: 15px;
+    left: 99%; /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 6px;
+    border-style: solid;
+	border-color: transparent transparent transparent #d72828;
+
+}
+.erro-input:hover .tooltiptext{
+	visibility:visible;
+	opacity:1;
+}
+/*Há alguns ícones de erro um pouco menores então para ficar bem encaixado o tolltipe tem que ficar um pouco acima do normal*/
+@media screen and (min-width:470px){
+.aviso-input-selects .tooltiptext{
+	width:150px;
+	left:120%;
+}
+.erro-input-selects .tooltiptext{
+	width:150px;
+	left:120%;
+}
+}
+@media screen and (min-width:700px){
+.aviso-input-selects .tooltiptext{
+	width:200px;
+	left:120%;
+}
+.erro-input-selects .tooltiptext{
+	width:200px;
+	left:120%;
+}
+}
+@media screen and (min-width:900px){
+.aviso-input-selects .tooltiptext{
+	width:250px;
+	left:125%;
+}
+.erro-input-selects .tooltiptext{
+	width:250px;
+	left:125%;
+}
+.erro-input .tooltiptext{
+	/*Posicionando a descrição*/
+	top: -0px;
+    left: 125%; 
+	/*Configurações para aparecer*/
+}
+.erro-input .tooltiptext::before{
+    content: " ";
+    position: absolute;
+    top: 17px;
+    right: 99%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #d72828 transparent transparent;
+}
+.erro-input .tooltiptext::after{
+	display:none;
+}
+}
