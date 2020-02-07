@@ -9,7 +9,7 @@ services:
       - .:/var/www/html
     ports:
       - "80:80"
-    command: bash -c "sleep 30 && mysql pawsapp -umateus -p"1234" < ./_utilidades/banco_script.sql -h db && supervisord"
+    command: bash -c "sleep 15 && mysql pawsapp -umateus -p"1234" < ./_utilidades/banco_script.sql -h db && supervisord"
   db:
     image: mysql:5.6
     command: --default-authentication-plugin=mysql_native_password
