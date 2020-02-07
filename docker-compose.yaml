@@ -1,0 +1,25 @@
+version: "3.3"
+
+services:
+  pawsapp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "80:80"
+    command: bash -c "sleep 30 && mysql pawsapp -umateus -p"1234" < ./_utilidades/banco_script.sql -h db && supervisord"
+  db:
+    image: mysql:5.6
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    depends_on: 
+      - pawsapp
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: pawsapp
+      MYSQL_USER: mateus
+      MYSQL_PASSWORD: '1234'
+    ports:
+      - "3306:3306"

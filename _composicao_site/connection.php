@@ -2,7 +2,7 @@
 
 	//Conexão com o banco de dados:
 	try{
-		$pdo = new PDO("mysql:host=localhost;dbname=pawsapp","mateus","1234");
+		$pdo = new PDO("mysql:host=db;dbname=pawsapp","mateus","1234");
 		$pdo -> exec("SET CHARACTER SET utf8");
 
 		// Set error reporting:

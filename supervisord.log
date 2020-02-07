@@ -1,0 +1,55 @@
+2020-02-07 18:00:29,704 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-02-07 18:00:29,704 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2020-02-07 18:00:29,704 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2020-02-07 18:00:29,704 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2020-02-07 18:00:29,704 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2020-02-07 18:00:29,704 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2020-02-07 18:00:29,704 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2020-02-07 18:00:29,704 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2020-02-07 18:00:29,704 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2020-02-07 18:06:08,008 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-02-07 18:06:08,008 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2020-02-07 18:06:08,008 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2020-02-07 18:06:08,009 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2020-02-07 18:06:08,009 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2020-02-07 18:06:08,009 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2020-02-07 18:06:08,009 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2020-02-07 18:06:08,009 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2020-02-07 18:06:08,009 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2020-02-07 18:06:08,021 INFO RPC interface 'supervisor' initialized
+2020-02-07 18:06:08,021 INFO supervisord started with pid 1
+2020-02-07 18:06:09,030 INFO spawned: 'syslogd' with pid 78
+2020-02-07 18:06:09,036 INFO spawned: 'nginxd' with pid 79
+2020-02-07 18:06:09,041 INFO spawned: 'php-fpmd' with pid 80
+2020-02-07 18:06:09,047 INFO spawned: 'crond' with pid 81
+2020-02-07 18:06:09,061 INFO spawned: 'postfixd' with pid 82
+2020-02-07 18:06:09,074 INFO spawned: 'sshd' with pid 83
+2020-02-07 18:06:09,100 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:06:09,100 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:06:09,101 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:06:09,101 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:06:09,102 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:06:10,587 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-07 18:10:33,126 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-02-07 18:10:33,126 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2020-02-07 18:10:33,126 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2020-02-07 18:10:33,126 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2020-02-07 18:10:33,127 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2020-02-07 18:10:33,127 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2020-02-07 18:10:33,127 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2020-02-07 18:10:33,127 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2020-02-07 18:10:33,127 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2020-02-07 18:10:33,142 INFO RPC interface 'supervisor' initialized
+2020-02-07 18:10:33,142 INFO supervisord started with pid 1
+2020-02-07 18:10:34,148 INFO spawned: 'syslogd' with pid 82
+2020-02-07 18:10:34,154 INFO spawned: 'nginxd' with pid 83
+2020-02-07 18:10:34,170 INFO spawned: 'php-fpmd' with pid 84
+2020-02-07 18:10:34,175 INFO spawned: 'crond' with pid 85
+2020-02-07 18:10:34,185 INFO spawned: 'postfixd' with pid 86
+2020-02-07 18:10:34,192 INFO spawned: 'sshd' with pid 87
+2020-02-07 18:10:34,214 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:10:34,215 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:10:34,216 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:10:34,217 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:10:34,219 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-07 18:10:35,743 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
