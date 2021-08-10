@@ -1,8 +1,8 @@
 # Pawsapp
 
-A charming social media network focused on pets. 
+A charming social media network focused on pets.
 
-This project was a school assignment created by me and some other friends. It was the first project that I had taken seriously, the team didn't know about version management, much less about design patterns and good practices, but in the end, we delivered a pretty web app. 
+This project was the result of a school assignment, it was developed by me and some other friends. It was the first project that I had taken seriously, the team didn't know about version management, much less about design patterns and good practices, but in the end, we delivered a pretty web app.
 
 ## Requeriments
 
