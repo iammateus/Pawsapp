@@ -1,6 +1,8 @@
 # Pawsapp
 
-A social media focused in pets. 
+A charming social media network focused on pets. 
+
+This project was a school assignment created by me and some other friends. It was the first project that I had taken seriously, the team didn't know about version management, much less about design patterns and good practices, but in the end, we delivered a pretty web app. 
 
 ## Requeriments
 
