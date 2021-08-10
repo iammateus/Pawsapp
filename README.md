@@ -15,6 +15,11 @@ This project was a school assignment created by me and some other friends. It wa
 
 Or using local PHP, MySQL, and Apache installed
 
-1 - Import the sql file (pawsapp/_utilidades/banco_script.sql) in your mysql server;
-2 - Update connection information on (pawsapp/_composicao_site/connection.php) file;
-3 - That's it, enjoy;
+1 - Import the sql file (pawsapp/_utilidades/banco_script.sql) in your mysql server;  
+2 - Update connection information on (pawsapp/_composicao_site/connection.php) file;  
+3 - That's it, enjoy;  
+
+## LICENSE
+
+[MIT](https://github.com/iammateus/Pawsapp/blob/master/LICENSE)  
+
